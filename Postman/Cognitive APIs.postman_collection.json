@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "203de7bb-45a9-44d6-bd31-5ded5734da40",
+		"name": "Cognitive APIs",
+		"description": "A collection of Cognitive API-related calls to Azure.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Computer Vision API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "<< PUT YOUR KEY HERE >>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://westus2.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Categories,Description,Color,Tags,Faces,ImageType,Adult&language=en",
+					"protocol": "https",
+					"host": [
+						"westus2",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"vision",
+						"v1.0",
+						"analyze"
+					],
+					"query": [
+						{
+							"key": "visualFeatures",
+							"value": "Categories,Description,Color,Tags,Faces,ImageType,Adult"
+						},
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Computer Vision API Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "<< PUT YOUR KEY HERE >>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://westus2.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Categories,Description,Color,Tags,Faces,ImageType,Adult&language=en",
+					"protocol": "https",
+					"host": [
+						"westus2",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"vision",
+						"v1.0",
+						"analyze"
+					],
+					"query": [
+						{
+							"key": "visualFeatures",
+							"value": "Categories,Description,Color,Tags,Faces,ImageType,Adult"
+						},
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Content Moderation API - Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "<< PUT YOUR KEY HERE >>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "image/jpeg"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "https://westus2.api.cognitive.microsoft.com/contentmoderator/moderate/v1.0/ProcessImage/Evaluate",
+					"protocol": "https",
+					"host": [
+						"westus2",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"contentmoderator",
+						"moderate",
+						"v1.0",
+						"ProcessImage",
+						"Evaluate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Face Detection API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "<< PUT YOUR KEY HERE >>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://overstockstorage.blob.core.windows.net/test-content/presidents.jpg\"\r\n}"
+				},
+				"url": {
+					"raw": "https://westus2.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=true&returnFaceLandmarks=true&returnFaceAttributes=age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise",
+					"protocol": "https",
+					"host": [
+						"westus2",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"face",
+						"v1.0",
+						"detect"
+					],
+					"query": [
+						{
+							"key": "returnFaceId",
+							"value": "true"
+						},
+						{
+							"key": "returnFaceLandmarks",
+							"value": "true"
+						},
+						{
+							"key": "returnFaceAttributes",
+							"value": "age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Content Moderation API - Text",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "<< PUT YOUR KEY HERE >>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "Is this a crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255,\\n1 Microsoft Way, Redmond, WA 98052"
+				},
+				"url": {
+					"raw": "https://westus2.api.cognitive.microsoft.com/contentmoderator/moderate/v1.0/ProcessText/Screen?autocorrect=true&PII=true&classify=true",
+					"protocol": "https",
+					"host": [
+						"westus2",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"contentmoderator",
+						"moderate",
+						"v1.0",
+						"ProcessText",
+						"Screen"
+					],
+					"query": [
+						{
+							"key": "autocorrect",
+							"value": "true"
+						},
+						{
+							"key": "PII",
+							"value": "true"
+						},
+						{
+							"key": "classify",
+							"value": "true"
+						}
+					]
+				},
+				"description": "https://docs.microsoft.com/en-us/azure/cognitive-services/content-moderator/text-moderation-api#classification-preview"
+			},
+			"response": []
+		}
+	]
+}
