@@ -5,6 +5,8 @@
 
 * Download [VS Code](https://code.visualstudio.com/docs), a lightweight code editor from Microsoft.
 
+  * Install the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) extension
+
   * Install the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension
 
   * `npm i -g azure-functions-core-tools@core`
