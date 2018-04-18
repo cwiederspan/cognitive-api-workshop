@@ -8,9 +8,11 @@
 * Download [Postman](https://www.getpostman.com/apps), a developer utility for calling raw APIs.
 
 ## Instruction Summary
-* Create RG
-* Create Storage and Containers
-* Create CosmosDB and Collections
+* Create Resource Group
+* Create Storage
+  * Create Blob Container
+* Create CosmosDB
+  * Create document Collection
 * Create Computer Vision API
 * Create Content Moderation API
 * Create Face API
