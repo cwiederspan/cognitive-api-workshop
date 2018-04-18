@@ -5,6 +5,10 @@
 
 * Download [VS Code](https://code.visualstudio.com/docs), a lightweight code editor from Microsoft.
 
+  * Install the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension
+
+  * `npm i -g azure-functions-core-tools@core`
+
 * Download [Postman](https://www.getpostman.com/apps), a developer utility for calling raw APIs.
 
 ## Instruction Summary
