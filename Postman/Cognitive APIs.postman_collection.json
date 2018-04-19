@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "<< PUT YOUR KEY HERE >>"
+						"value": "<< YOUR KEY GOES HERE >>"
 					},
 					{
 						"key": "Content-Type",
@@ -31,7 +31,7 @@
 					]
 				},
 				"url": {
-					"raw": "https://westus2.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Categories,Description,Color,Tags,Faces,ImageType,Adult&language=en",
+					"raw": "https://westus2.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Categories,Description,Color,Tags,Faces,ImageType,Adult",
 					"protocol": "https",
 					"host": [
 						"westus2",
@@ -49,63 +49,6 @@
 						{
 							"key": "visualFeatures",
 							"value": "Categories,Description,Color,Tags,Faces,ImageType,Adult"
-						},
-						{
-							"key": "language",
-							"value": "en"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Computer Vision API Copy",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Ocp-Apim-Subscription-Key",
-						"value": "<< PUT YOUR KEY HERE >>"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded"
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "",
-							"description": "",
-							"type": "file"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://westus2.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Categories,Description,Color,Tags,Faces,ImageType,Adult&language=en",
-					"protocol": "https",
-					"host": [
-						"westus2",
-						"api",
-						"cognitive",
-						"microsoft",
-						"com"
-					],
-					"path": [
-						"vision",
-						"v1.0",
-						"analyze"
-					],
-					"query": [
-						{
-							"key": "visualFeatures",
-							"value": "Categories,Description,Color,Tags,Faces,ImageType,Adult"
-						},
-						{
-							"key": "language",
-							"value": "en"
 						}
 					]
 				}
@@ -119,7 +62,7 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "<< PUT YOUR KEY HERE >>"
+						"value": "<< YOUR KEY GOES HERE >>"
 					},
 					{
 						"key": "Content-Type",
@@ -158,7 +101,7 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "<< PUT YOUR KEY HERE >>"
+						"value": "<< YOUR KEY GOES HERE >>"
 					},
 					{
 						"key": "Content-Type",
@@ -209,7 +152,7 @@
 				"header": [
 					{
 						"key": "Ocp-Apim-Subscription-Key",
-						"value": "<< PUT YOUR KEY HERE >>"
+						"value": "<< YOUR KEY GOES HERE >>"
 					},
 					{
 						"key": "Content-Type",
@@ -253,6 +196,43 @@
 					]
 				},
 				"description": "https://docs.microsoft.com/en-us/azure/cognitive-services/content-moderator/text-moderation-api#classification-preview"
+			},
+			"response": []
+		},
+		{
+			"name": "OCR Computer Vision API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "<< YOUR KEY GOES HERE >>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/octet-stream"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "https://westus2.api.cognitive.microsoft.com/vision/v1.0/ocr",
+					"protocol": "https",
+					"host": [
+						"westus2",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"vision",
+						"v1.0",
+						"ocr"
+					]
+				}
 			},
 			"response": []
 		}
