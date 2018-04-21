@@ -12,6 +12,10 @@
 ## Prerequisites
 * Full access to a usable Azure account. You can create a [Free Trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/) here.
 
+* Download and install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+
+* Download [Postman](https://www.getpostman.com/apps), a developer utility for calling raw APIs.
+
 * Download [VS Code](https://code.visualstudio.com/docs), a lightweight code editor from Microsoft.
 
   * Install the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) extension
@@ -19,8 +23,6 @@
   * Install the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension
 
   * `npm i -g azure-functions-core-tools@core`
-
-* Download [Postman](https://www.getpostman.com/apps), a developer utility for calling raw APIs.
 
 ## Instruction Summary
 * Create Resource Group
