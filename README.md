@@ -1,8 +1,8 @@
 # Cognitive API Workshop
 
 ## Intro
-**Name:** Chris Wiederspan
-**Role:** Microsoft Azure App Dev Specialist
+**Name:** Chris Wiederspan  
+**Role:** Microsoft Azure App Dev Specialist  
 **Email:** chris.wiederspan@microsoft.com
 
 ## Goals
