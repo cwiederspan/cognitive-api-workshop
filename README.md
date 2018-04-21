@@ -1,5 +1,14 @@
 # Cognitive API Workshop
 
+## Intro
+**Name:** Chris Wiederspan
+**Role:** Microsoft Azure App Dev Specialist
+**Email:** chris.wiederspan@microsoft.com
+
+## Goals
+1.) Explore and understand the [Azure Cognitive Service APIs](https://azure.microsoft.com/en-us/services/cognitive-services/)
+2.) Experiment with [Azure Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/)
+
 ## Prerequisites
 * Full access to a usable Azure account. You can create a [Free Trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/) here.
 
