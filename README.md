@@ -2,9 +2,7 @@
 
 ## Intro
 **Name:** Chris Wiederspan
-
 **Role:** Microsoft Azure App Dev Specialist
-
 **Email:** chris.wiederspan@microsoft.com
 
 ## Goals
