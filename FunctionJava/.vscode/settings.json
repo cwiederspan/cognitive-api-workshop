@@ -1,5 +1,0 @@
-{
-  "azureFunctions.projectRuntime": "beta",
-  "azureFunctions.projectLanguage": "Java",
-  "azureFunctions.templateFilter": "Verified"
-}
